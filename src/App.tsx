@@ -35,13 +35,15 @@ function App() {
     setOpportunities((prev) => [...prev, newOpp]);
   };
 
-  if (loading) return <p className="p-4">Carregando...</p>;
+  if (loading) return <p className="p-4">Loading...</p>;
   if (error) return <p className="p-4 text-red-500">{error}</p>;
-  if (!leads.length) return <p className="p-4">Nenhum lead encontrado</p>;
+  if (!leads.length) return <p className="p-4">No lead found</p>;
 
   return (
     <div className="flex h-screen">
-      <LeadList leads={leads} onSelect={setSelectedLead} />
+      <div className="w-2/3 m-3">
+        <LeadList leads={leads} onSelect={setSelectedLead} />
+      </div>
 
       {selectedLead && (
         <LeadDetail

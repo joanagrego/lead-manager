@@ -30,8 +30,9 @@ export const LeadList = ({ leads, onSelect }: Props) => {
     {
       header: "Score",
       accessor: (l: Lead) => (
-        <span className="font-medium text-blue-600">{l.score}</span>
+        <span className="font-bold">{l.score}</span>
       ),
+      sortValue: (l: Lead) => l.score
     },
     { header: "Status", accessor: (l: Lead) => l.status },
   ];
@@ -44,11 +45,12 @@ export const LeadList = ({ leads, onSelect }: Props) => {
           onChange={setSearch}
           placeholder="Search by name or company"
         />
-        <SelectFilter
-          selectValue={statusFilter}
-          onSelectChange={setStatusFilter}
-          selectOptions={STATUS_OPTIONS}
-        />
+
+          <SelectFilter
+            selectValue={statusFilter}
+            onSelectChange={setStatusFilter}
+            selectOptions={STATUS_OPTIONS}
+          />
       </div>
 
       <Table
