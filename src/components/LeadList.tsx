@@ -25,16 +25,17 @@ export const LeadList = ({ leads, onSelect }: Props) => {
     .sort((a, b) => b.score - a.score);
 
   const columns = [
+    { header: "ID", accessor: (l: Lead) => l.id },
+
     { header: "Name", accessor: (l: Lead) => l.name },
     { header: "Company", accessor: (l: Lead) => l.company },
     {
       header: "Score",
-      accessor: (l: Lead) => (
-        <span className="font-bold">{l.score}</span>
-      ),
-      sortValue: (l: Lead) => l.score
+      accessor: (l: Lead) => <span className="font-bold">{l.score}</span>,
+      sortValue: (l: Lead) => l.score,
     },
     { header: "Status", accessor: (l: Lead) => l.status },
+    { header: "Source", accessor: (l: Lead) => l.source },
   ];
 
   return (
@@ -46,11 +47,11 @@ export const LeadList = ({ leads, onSelect }: Props) => {
           placeholder="Search by name or company"
         />
 
-          <SelectFilter
-            selectValue={statusFilter}
-            onSelectChange={setStatusFilter}
-            selectOptions={STATUS_OPTIONS}
-          />
+        <SelectFilter
+          selectValue={statusFilter}
+          onSelectChange={setStatusFilter}
+          selectOptions={STATUS_OPTIONS}
+        />
       </div>
 
       <Table

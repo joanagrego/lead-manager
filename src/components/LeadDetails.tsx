@@ -5,10 +5,9 @@ type Props = {
   lead: Lead;
   onClose: () => void;
   onSave: (lead: Lead) => void;
-  onConvert: (lead: Lead) => void;
 };
 
-export default function LeadDetail({ lead, onClose, onSave, onConvert }: Props) {
+export default function LeadDetail({ lead, onClose, onSave }: Props) {
   const [edited, setEdited] = useState<Lead>({ ...lead });
   const [error, setError] = useState("");
 
@@ -62,12 +61,6 @@ export default function LeadDetail({ lead, onClose, onSave, onConvert }: Props) 
           className="bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300 transition"
         >
           Cancelar
-        </button>
-        <button
-          onClick={() => onConvert(lead)}
-          className="ml-auto bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
-        >
-          Converter Lead
         </button>
       </div>
     </div>

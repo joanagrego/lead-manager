@@ -24,7 +24,7 @@ export const Table = <T,>({
     index: number;
     direction: "asc" | "desc";
   }>({
-    index: 2,
+    index: 3,
     direction: "desc",
   });
 

@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import type { Lead } from "./types/lead";
 import type { Opportunity } from "./types/opportunity";
-import LeadDetail from "./components/LeadDetails";
-import { LeadList } from "./components/LeadList";
-import { OpportunitiesTable } from "./components/OpportunitiesTable";
+
+import { Layout } from "./components/ui/Layout/Layout";
+import { LeadsPage } from "./components/pages/LeadsPage";
+import { OpportunitiesPage } from "./components/pages/OpportunitiesPage";
 
 function App() {
   const [leads, setLeads] = useState<Lead[]>([]);
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
   const [opportunities, setOpportunities] = useState<Opportunity[]>([]);
+  const [page, setPage] = useState<"leads" | "opportunities">("leads");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
@@ -33,6 +35,7 @@ function App() {
       accountName: lead.company,
     };
     setOpportunities((prev) => [...prev, newOpp]);
+    setPage("opportunities");
   };
 
   if (loading) return <p className="p-4">Loading...</p>;
@@ -40,28 +43,13 @@ function App() {
   if (!leads.length) return <p className="p-4">No lead found</p>;
 
   return (
-    <div className="flex h-screen">
-      <div className="w-2/3 m-3">
-        <LeadList leads={leads} onSelect={setSelectedLead} />
-      </div>
-
-      {selectedLead && (
-        <LeadDetail
-          lead={selectedLead}
-          onClose={() => setSelectedLead(null)}
-          onSave={(updatedLead) =>
-            setLeads((prev) =>
-              prev.map((l) => (l.id === updatedLead.id ? updatedLead : l))
-            )
-          }
-          onConvert={handleConvert}
-        />
+    <Layout onSelectPage={setPage}>
+      {page === "leads" ? (
+        <LeadsPage />
+      ) : (
+        <OpportunitiesPage opportunities={opportunities} />
       )}
-
-      <div className="w-1/3 border-l p-4 overflow-y-auto">
-        <OpportunitiesTable opportunities={opportunities} />
-      </div>
-    </div>
+    </Layout>
   );
 }
 
