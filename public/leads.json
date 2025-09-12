@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Maria Silva",
+    "company": "Tech Solutions",
+    "email": "maria@tech.com",
+    "source": "Website",
+    "score": 90,
+    "status": "New"
+  },
+  {
+    "id": 2,
+    "name": "João Pereira",
+    "company": "InovaCorp",
+    "email": "joao@inova.com",
+    "source": "Referral",
+    "score": 75,
+    "status": "Contacted"
+  }
+]
