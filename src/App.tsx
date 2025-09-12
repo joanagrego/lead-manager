@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import type { Lead } from "./types/lead";
 import type { Opportunity } from "./types/opportunity";
-import LeadList from "./components/LeadList";
 import LeadDetail from "./components/LeadDetails";
-import OpportunitiesTable from "./components/OpportunitiesTable";
-
+import { LeadList } from "./components/LeadList";
+import { OpportunitiesTable } from "./components/OpportunitiesTable";
 
 function App() {
   const [leads, setLeads] = useState<Lead[]>([]);
