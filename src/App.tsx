@@ -1,66 +1,34 @@
-import { useEffect, useState } from "react";
-import type { Lead } from "./types/lead";
+import { useState } from "react";
 import type { Opportunity } from "./types/opportunity";
-import LeadList from "./components/LeadList";
-import LeadDetail from "./components/LeadDetails";
-import OpportunitiesTable from "./components/OpportunitiesTable";
 
+import { Layout } from "./components/ui/Layout/Layout";
+import { LeadsPage } from "./components/pages/LeadsPage";
+import { OpportunitiesPage } from "./components/pages/OpportunitiesPage";
+import { useLeadsContext } from "./context/useLeadsContext";
 
 function App() {
-  const [leads, setLeads] = useState<Lead[]>([]);
-  const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
+  const { leads, loading, error } = useLeadsContext();
+
   const [opportunities, setOpportunities] = useState<Opportunity[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
+  const [page, setPage] = useState<"leads" | "opportunities">("leads");
 
-  useEffect(() => {
-    fetch("/leads.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setLeads(data);
-        setLoading(false);
-      })
-      .catch(() => {
-        setError("Erro ao carregar leads");
-        setLoading(false);
-      });
-  }, []);
-
-  const handleConvert = (lead: Lead) => {
-    const newOpp: Opportunity = {
-      id: opportunities.length + 1,
-      name: lead.name,
-      stage: "New",
-      accountName: lead.company,
-    };
-    setOpportunities((prev) => [...prev, newOpp]);
+  const handleConvert = (opportunity: Opportunity) => {
+    setOpportunities((prev) => [...prev, opportunity]);
+    setPage("opportunities");
   };
 
-  if (loading) return <p className="p-4">Carregando...</p>;
+  if (loading) return <p className="p-4">Loading...</p>;
   if (error) return <p className="p-4 text-red-500">{error}</p>;
-  if (!leads.length) return <p className="p-4">Nenhum lead encontrado</p>;
+  if (!leads.length) return <p className="p-4">No lead found</p>;
 
   return (
-    <div className="flex h-screen">
-      <LeadList leads={leads} onSelect={setSelectedLead} />
-
-      {selectedLead && (
-        <LeadDetail
-          lead={selectedLead}
-          onClose={() => setSelectedLead(null)}
-          onSave={(updatedLead) =>
-            setLeads((prev) =>
-              prev.map((l) => (l.id === updatedLead.id ? updatedLead : l))
-            )
-          }
-          onConvert={handleConvert}
-        />
+    <Layout onSelectPage={setPage}>
+      {page === "leads" ? (
+        <LeadsPage onConvert={handleConvert} />
+      ) : (
+        <OpportunitiesPage opportunities={opportunities} />
       )}
-
-      <div className="w-1/3 border-l p-4 overflow-y-auto">
-        <OpportunitiesTable opportunities={opportunities} />
-      </div>
-    </div>
+    </Layout>
   );
 }
 

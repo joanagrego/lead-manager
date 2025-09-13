@@ -1,20 +1,1082 @@
 [
   {
     "id": 1,
-    "name": "Maria Silva",
-    "company": "Tech Solutions",
-    "email": "maria@tech.com",
+    "name": "Steven Lopez",
+    "company": "QuantumSoft",
+    "email": "steven.lopez@quantumsoft.com",
+    "source": "Social Media",
+    "score": 84,
+    "status": "New"
+  },
+  {
+    "id": 2,
+    "name": "Kevin Davis",
+    "company": "Omega Inc.",
+    "email": "kevin.davis@omegainc..com",
+    "source": "Social Media",
+    "score": 79,
+    "status": "New"
+  },
+  {
+    "id": 3,
+    "name": "Angela Lewis",
+    "company": "Global Dynamics",
+    "email": "angela.lewis@globaldynamics.com",
+    "source": "Social Media",
+    "score": 36,
+    "status": "Contacted"
+  },
+  {
+    "id": 4,
+    "name": "Mary Hall",
+    "company": "Alpha Systems",
+    "email": "mary.hall@alphasystems.com",
     "source": "Website",
     "score": 90,
     "status": "New"
   },
   {
-    "id": 2,
-    "name": "João Pereira",
-    "company": "InovaCorp",
-    "email": "joao@inova.com",
+    "id": 5,
+    "name": "Kevin Thompson",
+    "company": "Omega Inc.",
+    "email": "kevin.thompson@omegainc..com",
+    "source": "Social Media",
+    "score": 49,
+    "status": "Contacted"
+  },
+  {
+    "id": 6,
+    "name": "Sarah Clark",
+    "company": "Pioneer Labs",
+    "email": "sarah.clark@pioneerlabs.com",
     "source": "Referral",
+    "score": 49,
+    "status": "New"
+  },
+  {
+    "id": 7,
+    "name": "Nancy Hall",
+    "company": "Innovatech",
+    "email": "nancy.hall@innovatech.com",
+    "source": "Social Media",
+    "score": 63,
+    "status": "Contacted"
+  },
+  {
+    "id": 8,
+    "name": "Steven Smith",
+    "company": "Pioneer Labs",
+    "email": "steven.smith@pioneerlabs.com",
+    "source": "Email Campaign",
+    "score": 56,
+    "status": "Contacted"
+  },
+  {
+    "id": 9,
+    "name": "Dorothy Thomas",
+    "company": "QuantumSoft",
+    "email": "dorothy.thomas@quantumsoft.com",
+    "source": "Social Media",
+    "score": 100,
+    "status": "Contacted"
+  },
+  {
+    "id": 10,
+    "name": "Elizabeth Jones",
+    "company": "NextGen Solutions",
+    "email": "elizabeth.jones@nextgensolutions.com",
+    "source": "Social Media",
+    "score": 71,
+    "status": "New"
+  },
+  {
+    "id": 11,
+    "name": "David Thomas",
+    "company": "Vertex Group",
+    "email": "david.thomas@vertexgroup.com",
+    "source": "Website",
+    "score": 36,
+    "status": "New"
+  },
+  {
+    "id": 12,
+    "name": "Kevin Moore",
+    "company": "NextGen Solutions",
+    "email": "kevin.moore@nextgensolutions.com",
+    "source": "Website",
+    "score": 59,
+    "status": "Contacted"
+  },
+  {
+    "id": 13,
+    "name": "Jennifer Garcia",
+    "company": "Alpha Systems",
+    "email": "jennifer.garcia@alphasystems.com",
+    "source": "Website",
+    "score": 93,
+    "status": "New"
+  },
+  {
+    "id": 14,
+    "name": "Barbara Martin",
+    "company": "BetaWorks",
+    "email": "barbara.martin@betaworks.com",
+    "source": "Referral",
+    "score": 34,
+    "status": "Contacted"
+  },
+  {
+    "id": 15,
+    "name": "John Garcia",
+    "company": "Omega Inc.",
+    "email": "john.garcia@omegainc..com",
+    "source": "Email Campaign",
+    "score": 87,
+    "status": "New"
+  },
+  {
+    "id": 16,
+    "name": "David Clark",
+    "company": "Alpha Systems",
+    "email": "david.clark@alphasystems.com",
+    "source": "Email Campaign",
+    "score": 39,
+    "status": "Contacted"
+  },
+  {
+    "id": 17,
+    "name": "James Lee",
+    "company": "Innovatech",
+    "email": "james.lee@innovatech.com",
+    "source": "Website",
+    "score": 81,
+    "status": "New"
+  },
+  {
+    "id": 18,
+    "name": "Joshua Miller",
+    "company": "Pioneer Labs",
+    "email": "joshua.miller@pioneerlabs.com",
+    "source": "Social Media",
+    "score": 45,
+    "status": "Contacted"
+  },
+  {
+    "id": 19,
+    "name": "Sarah Harris",
+    "company": "Pioneer Labs",
+    "email": "sarah.harris@pioneerlabs.com",
+    "source": "Website",
+    "score": 81,
+    "status": "Contacted"
+  },
+  {
+    "id": 20,
+    "name": "Brandon Martin",
+    "company": "Global Dynamics",
+    "email": "brandon.martin@globaldynamics.com",
+    "source": "Website",
+    "score": 43,
+    "status": "Contacted"
+  },
+  {
+    "id": 21,
+    "name": "Matthew Thompson",
+    "company": "Pioneer Labs",
+    "email": "matthew.thompson@pioneerlabs.com",
+    "source": "Referral",
+    "score": 79,
+    "status": "Contacted"
+  },
+  {
+    "id": 22,
+    "name": "John Harris",
+    "company": "Alpha Systems",
+    "email": "john.harris@alphasystems.com",
+    "source": "Referral",
+    "score": 45,
+    "status": "Contacted"
+  },
+  {
+    "id": 23,
+    "name": "Ryan Garcia",
+    "company": "Innovatech",
+    "email": "ryan.garcia@innovatech.com",
+    "source": "Email Campaign",
+    "score": 58,
+    "status": "Contacted"
+  },
+  {
+    "id": 24,
+    "name": "James Robinson",
+    "company": "NextGen Solutions",
+    "email": "james.robinson@nextgensolutions.com",
+    "source": "Referral",
+    "score": 54,
+    "status": "New"
+  },
+  {
+    "id": 25,
+    "name": "Robert Walker",
+    "company": "NextGen Solutions",
+    "email": "robert.walker@nextgensolutions.com",
+    "source": "Referral",
+    "score": 71,
+    "status": "Contacted"
+  },
+  {
+    "id": 26,
+    "name": "Dorothy Garcia",
+    "company": "TechCorp",
+    "email": "dorothy.garcia@techcorp.com",
+    "source": "Email Campaign",
+    "score": 85,
+    "status": "New"
+  },
+  {
+    "id": 27,
+    "name": "Susan Rodriguez",
+    "company": "TechCorp",
+    "email": "susan.rodriguez@techcorp.com",
+    "source": "Email Campaign",
+    "score": 73,
+    "status": "New"
+  },
+  {
+    "id": 28,
+    "name": "Amanda Lopez",
+    "company": "Global Dynamics",
+    "email": "amanda.lopez@globaldynamics.com",
+    "source": "Website",
+    "score": 100,
+    "status": "Contacted"
+  },
+  {
+    "id": 29,
+    "name": "Steven Lopez",
+    "company": "QuantumSoft",
+    "email": "steven.lopez@quantumsoft.com",
+    "source": "Website",
+    "score": 49,
+    "status": "Contacted"
+  },
+  {
+    "id": 30,
+    "name": "Dorothy Moore",
+    "company": "Vertex Group",
+    "email": "dorothy.moore@vertexgroup.com",
+    "source": "Social Media",
+    "score": 72,
+    "status": "New"
+  },
+  {
+    "id": 31,
+    "name": "Paul Lewis",
+    "company": "Alpha Systems",
+    "email": "paul.lewis@alphasystems.com",
+    "source": "Referral",
+    "score": 70,
+    "status": "New"
+  },
+  {
+    "id": 32,
+    "name": "Steven Jackson",
+    "company": "TechCorp",
+    "email": "steven.jackson@techcorp.com",
+    "source": "Social Media",
+    "score": 66,
+    "status": "Contacted"
+  },
+  {
+    "id": 33,
+    "name": "Michael Anderson",
+    "company": "Vertex Group",
+    "email": "michael.anderson@vertexgroup.com",
+    "source": "Email Campaign",
+    "score": 99,
+    "status": "Contacted"
+  },
+  {
+    "id": 34,
+    "name": "Sarah Walker",
+    "company": "Innovatech",
+    "email": "sarah.walker@innovatech.com",
+    "source": "Email Campaign",
+    "score": 59,
+    "status": "New"
+  },
+  {
+    "id": 35,
+    "name": "Amanda King",
+    "company": "Global Dynamics",
+    "email": "amanda.king@globaldynamics.com",
+    "source": "Email Campaign",
+    "score": 98,
+    "status": "Contacted"
+  },
+  {
+    "id": 36,
+    "name": "Sarah Walker",
+    "company": "Alpha Systems",
+    "email": "sarah.walker@alphasystems.com",
+    "source": "Referral",
+    "score": 62,
+    "status": "Contacted"
+  },
+  {
+    "id": 37,
+    "name": "Joseph Hernandez",
+    "company": "Vertex Group",
+    "email": "joseph.hernandez@vertexgroup.com",
+    "source": "Email Campaign",
+    "score": 32,
+    "status": "Contacted"
+  },
+  {
+    "id": 38,
+    "name": "Amanda Walker",
+    "company": "BetaWorks",
+    "email": "amanda.walker@betaworks.com",
+    "source": "Referral",
+    "score": 83,
+    "status": "Contacted"
+  },
+  {
+    "id": 39,
+    "name": "Anthony White",
+    "company": "Alpha Systems",
+    "email": "anthony.white@alphasystems.com",
+    "source": "Social Media",
+    "score": 65,
+    "status": "Contacted"
+  },
+  {
+    "id": 40,
+    "name": "Angela Lewis",
+    "company": "NextGen Solutions",
+    "email": "angela.lewis@nextgensolutions.com",
+    "source": "Website",
+    "score": 40,
+    "status": "New"
+  },
+  {
+    "id": 41,
+    "name": "Michael Wilson",
+    "company": "NextGen Solutions",
+    "email": "michael.wilson@nextgensolutions.com",
+    "source": "Website",
+    "score": 96,
+    "status": "New"
+  },
+  {
+    "id": 42,
+    "name": "Karen Miller",
+    "company": "Innovatech",
+    "email": "karen.miller@innovatech.com",
+    "source": "Referral",
+    "score": 32,
+    "status": "Contacted"
+  },
+  {
+    "id": 43,
+    "name": "Matthew Thompson",
+    "company": "TechCorp",
+    "email": "matthew.thompson@techcorp.com",
+    "source": "Referral",
+    "score": 87,
+    "status": "New"
+  },
+  {
+    "id": 44,
+    "name": "James Rodriguez",
+    "company": "QuantumSoft",
+    "email": "james.rodriguez@quantumsoft.com",
+    "source": "Website",
+    "score": 98,
+    "status": "New"
+  },
+  {
+    "id": 45,
+    "name": "Michael Walker",
+    "company": "QuantumSoft",
+    "email": "michael.walker@quantumsoft.com",
+    "source": "Email Campaign",
+    "score": 57,
+    "status": "New"
+  },
+  {
+    "id": 46,
+    "name": "Amy Lopez",
+    "company": "Global Dynamics",
+    "email": "amy.lopez@globaldynamics.com",
+    "source": "Referral",
+    "score": 39,
+    "status": "New"
+  },
+  {
+    "id": 47,
+    "name": "Charles Walker",
+    "company": "NextGen Solutions",
+    "email": "charles.walker@nextgensolutions.com",
+    "source": "Referral",
+    "score": 38,
+    "status": "Contacted"
+  },
+  {
+    "id": 48,
+    "name": "Steven Gonzalez",
+    "company": "BetaWorks",
+    "email": "steven.gonzalez@betaworks.com",
+    "source": "Social Media",
+    "score": 33,
+    "status": "Contacted"
+  },
+  {
+    "id": 49,
+    "name": "Mark Martin",
+    "company": "Pioneer Labs",
+    "email": "mark.martin@pioneerlabs.com",
+    "source": "Referral",
+    "score": 39,
+    "status": "New"
+  },
+  {
+    "id": 50,
+    "name": "Anthony Thompson",
+    "company": "Vertex Group",
+    "email": "anthony.thompson@vertexgroup.com",
+    "source": "Website",
+    "score": 34,
+    "status": "New"
+  },
+  {
+    "id": 51,
+    "name": "Thomas Moore",
+    "company": "BetaWorks",
+    "email": "thomas.moore@betaworks.com",
+    "source": "Referral",
+    "score": 93,
+    "status": "New"
+  },
+  {
+    "id": 52,
+    "name": "Robert Moore",
+    "company": "Omega Inc.",
+    "email": "robert.moore@omegainc..com",
+    "source": "Email Campaign",
+    "score": 83,
+    "status": "Contacted"
+  },
+  {
+    "id": 53,
+    "name": "Jessica Gonzalez",
+    "company": "Global Dynamics",
+    "email": "jessica.gonzalez@globaldynamics.com",
+    "source": "Email Campaign",
+    "score": 85,
+    "status": "New"
+  },
+  {
+    "id": 54,
+    "name": "Richard Williams",
+    "company": "Global Dynamics",
+    "email": "richard.williams@globaldynamics.com",
+    "source": "Social Media",
+    "score": 34,
+    "status": "Contacted"
+  },
+  {
+    "id": 55,
+    "name": "Elizabeth Williams",
+    "company": "Vertex Group",
+    "email": "elizabeth.williams@vertexgroup.com",
+    "source": "Social Media",
+    "score": 73,
+    "status": "New"
+  },
+  {
+    "id": 56,
+    "name": "Susan Walker",
+    "company": "Innovatech",
+    "email": "susan.walker@innovatech.com",
+    "source": "Email Campaign",
+    "score": 97,
+    "status": "New"
+  },
+  {
+    "id": 57,
+    "name": "John Johnson",
+    "company": "NextGen Solutions",
+    "email": "john.johnson@nextgensolutions.com",
+    "source": "Website",
+    "score": 53,
+    "status": "Contacted"
+  },
+  {
+    "id": 58,
+    "name": "Brian Lopez",
+    "company": "Omega Inc.",
+    "email": "brian.lopez@omegainc..com",
+    "source": "Email Campaign",
+    "score": 46,
+    "status": "New"
+  },
+  {
+    "id": 59,
+    "name": "David Davis",
+    "company": "Omega Inc.",
+    "email": "david.davis@omegainc..com",
+    "source": "Social Media",
+    "score": 72,
+    "status": "Contacted"
+  },
+  {
+    "id": 60,
+    "name": "Anthony Hall",
+    "company": "Omega Inc.",
+    "email": "anthony.hall@omegainc..com",
+    "source": "Referral",
+    "score": 81,
+    "status": "New"
+  },
+  {
+    "id": 61,
+    "name": "Angela Garcia",
+    "company": "Alpha Systems",
+    "email": "angela.garcia@alphasystems.com",
+    "source": "Email Campaign",
+    "score": 93,
+    "status": "New"
+  },
+  {
+    "id": 62,
+    "name": "James Thompson",
+    "company": "Omega Inc.",
+    "email": "james.thompson@omegainc..com",
+    "source": "Social Media",
+    "score": 53,
+    "status": "Contacted"
+  },
+  {
+    "id": 63,
+    "name": "Michael Allen",
+    "company": "Alpha Systems",
+    "email": "michael.allen@alphasystems.com",
+    "source": "Social Media",
+    "score": 55,
+    "status": "Contacted"
+  },
+  {
+    "id": 64,
+    "name": "Anthony Thompson",
+    "company": "Alpha Systems",
+    "email": "anthony.thompson@alphasystems.com",
+    "source": "Referral",
+    "score": 45,
+    "status": "New"
+  },
+  {
+    "id": 65,
+    "name": "Jennifer Moore",
+    "company": "BetaWorks",
+    "email": "jennifer.moore@betaworks.com",
+    "source": "Email Campaign",
+    "score": 55,
+    "status": "Contacted"
+  },
+  {
+    "id": 66,
+    "name": "Melissa Miller",
+    "company": "NextGen Solutions",
+    "email": "melissa.miller@nextgensolutions.com",
+    "source": "Social Media",
+    "score": 57,
+    "status": "New"
+  },
+  {
+    "id": 67,
+    "name": "Nancy Allen",
+    "company": "Alpha Systems",
+    "email": "nancy.allen@alphasystems.com",
+    "source": "Website",
+    "score": 98,
+    "status": "New"
+  },
+  {
+    "id": 68,
+    "name": "Angela Moore",
+    "company": "NextGen Solutions",
+    "email": "angela.moore@nextgensolutions.com",
+    "source": "Website",
+    "score": 79,
+    "status": "New"
+  },
+  {
+    "id": 69,
+    "name": "Jessica Martin",
+    "company": "BetaWorks",
+    "email": "jessica.martin@betaworks.com",
+    "source": "Website",
+    "score": 32,
+    "status": "Contacted"
+  },
+  {
+    "id": 70,
+    "name": "Linda Clark",
+    "company": "Global Dynamics",
+    "email": "linda.clark@globaldynamics.com",
+    "source": "Referral",
+    "score": 76,
+    "status": "New"
+  },
+  {
+    "id": 71,
+    "name": "Matthew King",
+    "company": "Alpha Systems",
+    "email": "matthew.king@alphasystems.com",
+    "source": "Email Campaign",
+    "score": 76,
+    "status": "New"
+  },
+  {
+    "id": 72,
+    "name": "Dorothy Rodriguez",
+    "company": "Omega Inc.",
+    "email": "dorothy.rodriguez@omegainc..com",
+    "source": "Referral",
+    "score": 56,
+    "status": "Contacted"
+  },
+  {
+    "id": 73,
+    "name": "Michelle Rodriguez",
+    "company": "TechCorp",
+    "email": "michelle.rodriguez@techcorp.com",
+    "source": "Social Media",
+    "score": 37,
+    "status": "New"
+  },
+  {
+    "id": 74,
+    "name": "Brandon Hall",
+    "company": "Alpha Systems",
+    "email": "brandon.hall@alphasystems.com",
+    "source": "Social Media",
+    "score": 85,
+    "status": "New"
+  },
+  {
+    "id": 75,
+    "name": "Joseph Jones",
+    "company": "Pioneer Labs",
+    "email": "joseph.jones@pioneerlabs.com",
+    "source": "Email Campaign",
+    "score": 95,
+    "status": "New"
+  },
+  {
+    "id": 76,
+    "name": "Mary Smith",
+    "company": "TechCorp",
+    "email": "mary.smith@techcorp.com",
+    "source": "Social Media",
+    "score": 49,
+    "status": "New"
+  },
+  {
+    "id": 77,
+    "name": "Susan White",
+    "company": "Pioneer Labs",
+    "email": "susan.white@pioneerlabs.com",
+    "source": "Email Campaign",
+    "score": 63,
+    "status": "New"
+  },
+  {
+    "id": 78,
+    "name": "David Jones",
+    "company": "Global Dynamics",
+    "email": "david.jones@globaldynamics.com",
+    "source": "Referral",
+    "score": 68,
+    "status": "Contacted"
+  },
+  {
+    "id": 79,
+    "name": "Ryan Hernandez",
+    "company": "Alpha Systems",
+    "email": "ryan.hernandez@alphasystems.com",
+    "source": "Referral",
+    "score": 93,
+    "status": "Contacted"
+  },
+  {
+    "id": 80,
+    "name": "Thomas Williams",
+    "company": "Alpha Systems",
+    "email": "thomas.williams@alphasystems.com",
+    "source": "Website",
     "score": 75,
     "status": "Contacted"
+  },
+  {
+    "id": 81,
+    "name": "Brian Jackson",
+    "company": "Global Dynamics",
+    "email": "brian.jackson@globaldynamics.com",
+    "source": "Social Media",
+    "score": 69,
+    "status": "New"
+  },
+  {
+    "id": 82,
+    "name": "Dorothy Rodriguez",
+    "company": "BetaWorks",
+    "email": "dorothy.rodriguez@betaworks.com",
+    "source": "Email Campaign",
+    "score": 58,
+    "status": "New"
+  },
+  {
+    "id": 83,
+    "name": "Rebecca Anderson",
+    "company": "Alpha Systems",
+    "email": "rebecca.anderson@alphasystems.com",
+    "source": "Website",
+    "score": 59,
+    "status": "New"
+  },
+  {
+    "id": 84,
+    "name": "Rebecca Hernandez",
+    "company": "BetaWorks",
+    "email": "rebecca.hernandez@betaworks.com",
+    "source": "Social Media",
+    "score": 61,
+    "status": "Contacted"
+  },
+  {
+    "id": 85,
+    "name": "David Johnson",
+    "company": "Innovatech",
+    "email": "david.johnson@innovatech.com",
+    "source": "Website",
+    "score": 83,
+    "status": "Contacted"
+  },
+  {
+    "id": 86,
+    "name": "Angela Clark",
+    "company": "Global Dynamics",
+    "email": "angela.clark@globaldynamics.com",
+    "source": "Email Campaign",
+    "score": 93,
+    "status": "Contacted"
+  },
+  {
+    "id": 87,
+    "name": "Jessica Johnson",
+    "company": "Vertex Group",
+    "email": "jessica.johnson@vertexgroup.com",
+    "source": "Website",
+    "score": 53,
+    "status": "New"
+  },
+  {
+    "id": 88,
+    "name": "Ryan Johnson",
+    "company": "Global Dynamics",
+    "email": "ryan.johnson@globaldynamics.com",
+    "source": "Referral",
+    "score": 95,
+    "status": "New"
+  },
+  {
+    "id": 89,
+    "name": "Charles Garcia",
+    "company": "Vertex Group",
+    "email": "charles.garcia@vertexgroup.com",
+    "source": "Referral",
+    "score": 89,
+    "status": "New"
+  },
+  {
+    "id": 90,
+    "name": "David Taylor",
+    "company": "Pioneer Labs",
+    "email": "david.taylor@pioneerlabs.com",
+    "source": "Social Media",
+    "score": 68,
+    "status": "New"
+  },
+  {
+    "id": 91,
+    "name": "Joseph Smith",
+    "company": "QuantumSoft",
+    "email": "joseph.smith@quantumsoft.com",
+    "source": "Social Media",
+    "score": 47,
+    "status": "Contacted"
+  },
+  {
+    "id": 92,
+    "name": "Linda Thompson",
+    "company": "Omega Inc.",
+    "email": "linda.thompson@omegainc..com",
+    "source": "Website",
+    "score": 42,
+    "status": "New"
+  },
+  {
+    "id": 93,
+    "name": "Barbara Hernandez",
+    "company": "Global Dynamics",
+    "email": "barbara.hernandez@globaldynamics.com",
+    "source": "Social Media",
+    "score": 97,
+    "status": "New"
+  },
+  {
+    "id": 94,
+    "name": "David Williams",
+    "company": "Vertex Group",
+    "email": "david.williams@vertexgroup.com",
+    "source": "Social Media",
+    "score": 56,
+    "status": "Contacted"
+  },
+  {
+    "id": 95,
+    "name": "Anthony Johnson",
+    "company": "Innovatech",
+    "email": "anthony.johnson@innovatech.com",
+    "source": "Referral",
+    "score": 39,
+    "status": "Contacted"
+  },
+  {
+    "id": 96,
+    "name": "Amy Rodriguez",
+    "company": "Alpha Systems",
+    "email": "amy.rodriguez@alphasystems.com",
+    "source": "Email Campaign",
+    "score": 48,
+    "status": "New"
+  },
+  {
+    "id": 97,
+    "name": "Matthew Anderson",
+    "company": "Innovatech",
+    "email": "matthew.anderson@innovatech.com",
+    "source": "Website",
+    "score": 75,
+    "status": "New"
+  },
+  {
+    "id": 98,
+    "name": "Melissa Walker",
+    "company": "QuantumSoft",
+    "email": "melissa.walker@quantumsoft.com",
+    "source": "Website",
+    "score": 49,
+    "status": "New"
+  },
+  {
+    "id": 99,
+    "name": "Ryan Martinez",
+    "company": "BetaWorks",
+    "email": "ryan.martinez@betaworks.com",
+    "source": "Website",
+    "score": 40,
+    "status": "New"
+  },
+  {
+    "id": 100,
+    "name": "Kevin Gonzalez",
+    "company": "QuantumSoft",
+    "email": "kevin.gonzalez@quantumsoft.com",
+    "source": "Referral",
+    "score": 63,
+    "status": "New"
+  },
+  {
+    "id": 101,
+    "name": "Charles Wilson",
+    "company": "Omega Inc.",
+    "email": "charles.wilson@omegainc..com",
+    "source": "Email Campaign",
+    "score": 50,
+    "status": "New"
+  },
+  {
+    "id": 102,
+    "name": "Susan Lewis",
+    "company": "Global Dynamics",
+    "email": "susan.lewis@globaldynamics.com",
+    "source": "Website",
+    "score": 73,
+    "status": "New"
+  },
+  {
+    "id": 103,
+    "name": "Steven Lopez",
+    "company": "Pioneer Labs",
+    "email": "steven.lopez@pioneerlabs.com",
+    "source": "Social Media",
+    "score": 79,
+    "status": "New"
+  },
+  {
+    "id": 104,
+    "name": "Angela Martin",
+    "company": "Alpha Systems",
+    "email": "angela.martin@alphasystems.com",
+    "source": "Website",
+    "score": 46,
+    "status": "Contacted"
+  },
+  {
+    "id": 105,
+    "name": "Steven Davis",
+    "company": "Innovatech",
+    "email": "steven.davis@innovatech.com",
+    "source": "Website",
+    "score": 91,
+    "status": "New"
+  },
+  {
+    "id": 106,
+    "name": "Ryan Allen",
+    "company": "NextGen Solutions",
+    "email": "ryan.allen@nextgensolutions.com",
+    "source": "Referral",
+    "score": 30,
+    "status": "New"
+  },
+  {
+    "id": 107,
+    "name": "Melissa Anderson",
+    "company": "Innovatech",
+    "email": "melissa.anderson@innovatech.com",
+    "source": "Referral",
+    "score": 44,
+    "status": "Contacted"
+  },
+  {
+    "id": 108,
+    "name": "Kevin Jackson",
+    "company": "TechCorp",
+    "email": "kevin.jackson@techcorp.com",
+    "source": "Email Campaign",
+    "score": 48,
+    "status": "New"
+  },
+  {
+    "id": 109,
+    "name": "William Garcia",
+    "company": "Pioneer Labs",
+    "email": "william.garcia@pioneerlabs.com",
+    "source": "Website",
+    "score": 85,
+    "status": "Contacted"
+  },
+  {
+    "id": 110,
+    "name": "Rebecca Jackson",
+    "company": "Alpha Systems",
+    "email": "rebecca.jackson@alphasystems.com",
+    "source": "Website",
+    "score": 76,
+    "status": "Contacted"
+  },
+  {
+    "id": 111,
+    "name": "Charles Allen",
+    "company": "Global Dynamics",
+    "email": "charles.allen@globaldynamics.com",
+    "source": "Email Campaign",
+    "score": 67,
+    "status": "New"
+  },
+  {
+    "id": 112,
+    "name": "Amy Hernandez",
+    "company": "Alpha Systems",
+    "email": "amy.hernandez@alphasystems.com",
+    "source": "Website",
+    "score": 98,
+    "status": "New"
+  },
+  {
+    "id": 113,
+    "name": "Brandon Taylor",
+    "company": "TechCorp",
+    "email": "brandon.taylor@techcorp.com",
+    "source": "Website",
+    "score": 75,
+    "status": "New"
+  },
+  {
+    "id": 114,
+    "name": "Steven Jackson",
+    "company": "QuantumSoft",
+    "email": "steven.jackson@quantumsoft.com",
+    "source": "Email Campaign",
+    "score": 63,
+    "status": "New"
+  },
+  {
+    "id": 115,
+    "name": "Amanda Brown",
+    "company": "QuantumSoft",
+    "email": "amanda.brown@quantumsoft.com",
+    "source": "Social Media",
+    "score": 64,
+    "status": "New"
+  },
+  {
+    "id": 116,
+    "name": "David Johnson",
+    "company": "Global Dynamics",
+    "email": "david.johnson@globaldynamics.com",
+    "source": "Email Campaign",
+    "score": 76,
+    "status": "New"
+  },
+  {
+    "id": 117,
+    "name": "Lisa Miller",
+    "company": "Innovatech",
+    "email": "lisa.miller@innovatech.com",
+    "source": "Social Media",
+    "score": 67,
+    "status": "New"
+  },
+  {
+    "id": 118,
+    "name": "Joseph Martin",
+    "company": "Global Dynamics",
+    "email": "joseph.martin@globaldynamics.com",
+    "source": "Referral",
+    "score": 36,
+    "status": "Contacted"
+  },
+  {
+    "id": 119,
+    "name": "Thomas Lee",
+    "company": "TechCorp",
+    "email": "thomas.lee@techcorp.com",
+    "source": "Referral",
+    "score": 61,
+    "status": "New"
+  },
+  {
+    "id": 120,
+    "name": "Brian Lee",
+    "company": "Vertex Group",
+    "email": "brian.lee@vertexgroup.com",
+    "source": "Social Media",
+    "score": 96,
+    "status": "New"
   }
 ]
