@@ -25,17 +25,17 @@ export const LeadList = ({ leads, onSelect }: Props) => {
     .sort((a, b) => b.score - a.score);
 
   const columns = [
-    { header: "ID", accessor: (l: Lead) => l.id },
+    { header: "ID", accessor: (lead: Lead) => lead.id },
 
-    { header: "Name", accessor: (l: Lead) => l.name },
-    { header: "Company", accessor: (l: Lead) => l.company },
+    { header: "Name", accessor: (lead: Lead) => lead.name },
+    { header: "Company", accessor: (lead: Lead) => lead.company },
     {
       header: "Score",
-      accessor: (l: Lead) => <span className="font-bold">{l.score}</span>,
-      sortValue: (l: Lead) => l.score,
+      accessor: (lead: Lead) => <span className="font-bold">{lead.score}</span>,
+      sortValue: (lead: Lead) => lead.score,
     },
-    { header: "Status", accessor: (l: Lead) => l.status },
-    { header: "Source", accessor: (l: Lead) => l.source },
+    { header: "Status", accessor: (lead: Lead) => lead.status },
+    { header: "Source", accessor: (lead: Lead) => lead.source },
   ];
 
   return (

@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { SortingIndicator } from "../SortingIndicator/SortingIndicator";
+import { Pagination } from "./Pagination";
 
 type Column<T> = {
   header: string;
@@ -28,9 +29,11 @@ export const Table = <T,>({
     direction: "desc",
   });
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
+
   const sortedData = useMemo(() => {
     if (!sortConfig) return data;
-
     const { index, direction } = sortConfig;
     const col = columns[index];
     if (!col.sortValue) return data;
@@ -44,11 +47,19 @@ export const Table = <T,>({
     });
   }, [data, sortConfig, columns]);
 
+  const paginatedData = useMemo(() => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    return sortedData.slice(startIndex, startIndex + itemsPerPage);
+  }, [sortedData, currentPage]);
+
+  const totalPages = Math.ceil(sortedData.length / itemsPerPage);
+
   const handleSort = (index: number) => {
     setSortConfig((prev) => {
       if (prev.index !== index) return { index, direction: "asc" };
       return { index, direction: prev.direction === "asc" ? "desc" : "asc" };
     });
+    setCurrentPage(1);
   };
 
   if (data.length === 0) {
@@ -79,7 +90,7 @@ export const Table = <T,>({
           </tr>
         </thead>
         <tbody>
-          {sortedData.map((item, idx) => (
+          {paginatedData.map((item, idx) => (
             <tr
               key={idx}
               className={`${
@@ -96,6 +107,12 @@ export const Table = <T,>({
           ))}
         </tbody>
       </table>
+
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={setCurrentPage}
+      />
     </div>
   );
 };
