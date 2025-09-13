@@ -32,7 +32,7 @@ export default function Sidebar({ onSelect }: Props) {
               : "hover:bg-gray-100"
           }`}
         >
-          Convert to Opportunity
+          Opportunities
         </button>
       </nav>
     </aside>

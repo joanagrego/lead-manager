@@ -1,26 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import LeadDetail from "../LeadDetails";
 import { LeadList } from "../LeadList";
 import type { Lead } from "../../types/lead";
+import { useLeadsContext } from "../../context/useLeadsContext";
+import type { Opportunity } from "../../types/opportunity";
 
-export function LeadsPage() {
-  const [leads, setLeads] = useState<Lead[]>([]);
+type Props = {
+  onConvert: (opportunity: Opportunity) => void;
+};
+
+export function LeadsPage({ onConvert }: Props) {
+  const { leads, setLeads, loading, error } = useLeadsContext();
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
 
-  useEffect(() => {
-    fetch("/leads.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setLeads(data);
-        setLoading(false);
-      })
-      .catch(() => {
-        setError("Erro ao carregar leads");
-        setLoading(false);
-      });
-  }, []);
 
   if (loading) return <p className="p-4">Loading...</p>;
   if (error) return <p className="p-4 text-red-500">{error}</p>;
@@ -38,9 +30,12 @@ export function LeadsPage() {
           onClose={() => setSelectedLead(null)}
           onSave={(updatedLead) =>
             setLeads((prev) =>
-              prev.map((l) => (l.id === updatedLead.id ? updatedLead : l))
+              prev.map((lead) =>
+                lead.id === updatedLead.id ? updatedLead : lead
+              )
             )
           }
+          onConvert={onConvert}
         />
       )}
     </div>

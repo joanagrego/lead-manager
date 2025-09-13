@@ -8,9 +8,23 @@ type Props = {
 export const OpportunitiesTable = ({ opportunities }: Props) => {
   const columns = [
     { header: "ID", accessor: (opportunity: Opportunity) => opportunity.id },
-    { header: "Name", accessor: (opportunity: Opportunity) => opportunity.name },
-    { header: "Stage", accessor: (opportunity: Opportunity) => opportunity.stage },
-    { header: "Account", accessor: (opportunity: Opportunity) => opportunity.accountName },
+
+    {
+      header: "Name",
+      accessor: (opportunity: Opportunity) => opportunity.name,
+    },
+    {
+      header: "Stage",
+      accessor: (opportunity: Opportunity) => opportunity.stage,
+    },
+    {
+      header: "Amount",
+      accessor: (opportunity: Opportunity) => opportunity.amount,
+    },
+    {
+      header: "Account",
+      accessor: (opportunity: Opportunity) => opportunity.accountName,
+    },
   ];
 
   return (
